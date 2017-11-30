@@ -21,6 +21,7 @@ OBJECTS   = $(addprefix $(OBJDIR)/, $(notdir $(SOURCES:.c=.out)))
 DEPENDS   = $(OBJECTS:.out=.d)
 
 $(TARGET): $(OBJECTS) $(LIBS)
+	-mkdir -p ./bin
 	$(CC) -o $@ $^ $(LDFLAGS)
 
 $(OBJDIR)/%.out: $(SRCDIR)/%.c

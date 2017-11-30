@@ -1,8 +1,10 @@
+[![Build Status](https://travis-ci.org/53ningen/linuxcmd.svg?branch=master)](https://travis-ci.org/53ningen/linuxcmd)
+
 linuxcmd
 ===
 
 * Linux コマンドを再発明するスレ
-* ふつうの Linux プログラミングを読みつつ C, Rust, Go でそれぞれを実装していく
+* [ふつうの Linux プログラミング](https://github.com/aamine/stdlinux2-source)を読みつつ C, Rust, Go でそれぞれを実装していく
 
 ### build
 
@@ -15,3 +17,4 @@ make
 ```
 make test
 ```
+
