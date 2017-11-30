@@ -27,10 +27,12 @@ $(OBJDIR)/%.out: $(SRCDIR)/%.c
 	-mkdir -p $(OBJDIR)
 	$(CC) $(CFLAGS) $(INCLUDE) -o $@ -c $<
 
-all: clean $(TARGET)
+all: $(TARGET)
 
 clean:
 	-rm -f $(OBJECTS) $(DEPENDS) $(TARGET)
 
--include $(DEPENDS)
+test: all
+	./test-script.sh
 
+-include $(DEPENDS)
