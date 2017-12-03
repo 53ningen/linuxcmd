@@ -1,7 +1,7 @@
 RUSTC=rustc
 BUILD=$(RUSTC)
 
-TARGETS    = hello
+TARGETS    = hello echo
 SRC_DIR    = ./src
 BIN_DIR    = ./bin
 
