@@ -1,0 +1,10 @@
+#!/bin/sh
+exec ruby -S -x $0 "$@"
+#! ruby
+
+ARGV.each_with_index do |arg, i|
+  sp = i == 0 ? "" : " "
+  print "#{sp}#{arg}"
+end
+
+print "\n"
