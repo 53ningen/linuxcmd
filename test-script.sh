@@ -152,6 +152,8 @@ uidof() {
     id $1 | sed -e 's/=/ /' -e 's/(/ /' | awk '{print $2}'
 }
 
+assert_stdout   "hello, world!" './bin/hello'
+
 assert_stdout   ""              './bin/echo'
 assert_stdout   "a"             './bin/echo a'
 assert_stdout   "a b c"         './bin/echo a b c'
