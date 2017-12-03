@@ -10,3 +10,6 @@ script:
   - pushd ./shell
   - make test
   - popd
+  - pushd ./python
+  - make test
+  - popd

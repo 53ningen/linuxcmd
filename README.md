@@ -25,4 +25,6 @@ make test
 * ./golang: MIT (gomi_ningen)
 * ./shell: MIT(gomi_ningen)
 * ./ruby: MIT(gomi_ningen)
+* ./node: MIT(gomi_ningen)
+* ./python: MIT(gomi_ningen)
 

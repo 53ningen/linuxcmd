@@ -1,0 +1,8 @@
+#!/usr/bin/env node
+
+'use strict';
+
+for(var i = 2; i < process.argv.length; i++){
+  process.stdout.write((i == 2 ? "" : " ") + process.argv[i]);
+}
+process.stdout.write("\n");
