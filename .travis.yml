@@ -6,4 +6,7 @@ compiler:
 script:
   - pushd ./c
   - make test
-
+  - popd
+  - pushd ./shell
+  - make test
+  - popd

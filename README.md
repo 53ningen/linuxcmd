@@ -23,4 +23,6 @@ make test
 * ./c: MIT (Minero Aoki)
 * ./rust: MIT (gomi_ningen)
 * ./golang: MIT (gomi_ningen)
+* ./shell: MIT(gomi_ningen)
+* ./ruby: MIT(gomi_ningen)
 
