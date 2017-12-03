@@ -12,3 +12,7 @@ $(TARGETS):
 
 clean:
 	-rm -f $(BIN_DIR)/*
+
+test: all
+	../test-script.sh
+

@@ -16,3 +16,7 @@ clean:
 
 fmt: $(TARGETS)
 	$(FMT) $(SRC_DIR)/
+
+test: all
+	../test-script.sh
+
