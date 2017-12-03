@@ -1,7 +1,8 @@
 GO=go
 BUILD=$(GO) build
+FMT=$(GO) fmt
 
-TARGETS    = hello
+TARGETS    = hello echo
 SRC_DIR    = ./src
 BIN_DIR    = ./bin
 
@@ -12,3 +13,6 @@ $(TARGETS):
 
 clean:
 	-rm -f $(BIN_DIR)/*
+
+fmt: $(TARGETS)
+	$(FMT) $(SRC_DIR)/
