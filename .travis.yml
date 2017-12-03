@@ -4,5 +4,6 @@ compiler:
   - gcc
 
 script:
+  - pushd ./c
   - make test
 

@@ -5,10 +5,10 @@ TARGETS    = hello
 SRC_DIR    = ./src
 BIN_DIR    = ./bin
 
+all: $(TARGETS)
+
 $(TARGETS):
 	$(BUILD) $(SRC_DIR)/$@.rs -o $(BIN_DIR)/$@
-
-all: $(TARGETS)
 
 clean:
 	-rm -f $(BIN_DIR)/*

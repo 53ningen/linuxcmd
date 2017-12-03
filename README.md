@@ -18,3 +18,9 @@ make
 make test
 ```
 
+### license
+
+* ./c: MIT (Minero Aoki)
+* ./rust: MIT (gomi_ningen)
+* ./golang: MIT (gomi_ningen)
+
