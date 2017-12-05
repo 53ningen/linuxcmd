@@ -28,4 +28,4 @@ make test
 * ./node: MIT(gomi_ningen)
 * ./python: MIT(gomi_ningen)
 * ./haskell: MIT(gomi_ningen)
-
+* ./swift: MIT(gomi_ningen)
