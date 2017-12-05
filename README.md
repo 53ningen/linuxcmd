@@ -27,4 +27,5 @@ make test
 * ./ruby: MIT(gomi_ningen)
 * ./node: MIT(gomi_ningen)
 * ./python: MIT(gomi_ningen)
+* ./haskell: MIT(gomi_ningen)
 
