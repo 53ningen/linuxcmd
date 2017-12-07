@@ -1,7 +1,7 @@
 CC=gcc
 BUILD=$(CC)
 
-TARGETS    = hello echo
+TARGETS    = hello echo cat
 SRC_DIR    = ./src
 BIN_DIR    = ./bin
 

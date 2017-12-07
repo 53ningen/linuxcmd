@@ -160,4 +160,6 @@ assert_stdout   "a b c"         './bin/echo a b c'
 assert_stdout   "a b c"         './bin/echo a "b c"'
 assert_stdout   "a b  c"        './bin/echo a "b  c"'
 
+#assert_equal    'cat ../helpers/cat_helpers.txt'     './bin/cat ../helpers/cat_helpers.txt'
+
 test_finished
