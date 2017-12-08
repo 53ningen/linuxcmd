@@ -30,6 +30,8 @@ static void do_cat(const char *path) {
     fd = open(path, O_RDONLY);
     if (fd < 0) die(path);
     for(;;) {
+        // fd の値は変わらず fd によって指し示されている
+        // ストリーム指し示す場所が read すると先に進んでいく
         n = read(fd, buf, sizeof buf);
         if (n < 0) die(path);
         if (n == 0) break;

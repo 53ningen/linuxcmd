@@ -1,0 +1,33 @@
+#!/usr/bin/env python
+
+import sys
+import subprocess
+
+sys.tracebacklimit = 0
+
+# https://docs.python.jp/2/library/io.html
+def doCat(path):
+  try:
+    f = open(path, "r")
+    text = f.read()
+    print text,
+  except Exception as e:
+    die(e)
+  finally:
+    f.close()
+
+def die(e):
+  print e.Message
+  exit(1)
+
+
+def main():
+  if (len(sys.argv) < 2):
+    print  '{0}: file name not given'.format(sys.argv[0])
+    exit(1)
+  sys.argv.pop(0)
+  for v in sys.argv:
+    doCat(v)
+
+main()
+exit(0)
