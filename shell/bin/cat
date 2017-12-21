@@ -1,0 +1,6 @@
+#! /bin/sh
+
+for i in $@;
+do
+  while read line; do echo ${line}; done < $i
+done
