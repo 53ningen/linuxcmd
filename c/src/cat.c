@@ -23,7 +23,6 @@ int main(int argc, char *argv[]) {
 }
 
 static void do_stdin_cat() {
-    int fd;
     unsigned char buf[BUFFER_SIZE];
     int n;
     for(;;) {
