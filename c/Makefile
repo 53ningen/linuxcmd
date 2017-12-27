@@ -1,7 +1,7 @@
 CC=gcc
 BUILD=$(CC)
 
-TARGETS    = hello echo cat
+TARGETS    = main hello echo cat cat2
 SRC_DIR    = ./src
 BIN_DIR    = ./bin
 
@@ -9,7 +9,7 @@ all: $(TARGETS)
 
 $(TARGETS):
 	-mkdir -p bin
-	$(BUILD) $(SRC_DIR)/$@.c -o $(BIN_DIR)/$@
+	$(BUILD) $(SRC_DIR)/$@.c -o $(BIN_DIR)/$@ -Wall
 
 clean:
 	-rm -f $(BIN_DIR)/*
