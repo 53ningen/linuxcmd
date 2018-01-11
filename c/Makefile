@@ -1,7 +1,7 @@
 CC=gcc
 BUILD=$(CC)
 
-TARGETS    = main hello echo cat cat2
+TARGETS    = main hello echo cat cat2 head
 SRC_DIR    = ./src
 BIN_DIR    = ./bin
 
