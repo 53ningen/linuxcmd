@@ -1,7 +1,7 @@
-CC=gcc
+  CC=gcc
 BUILD=$(CC)
 
-TARGETS    = hello echo cat cat2 head bug_head ls
+TARGETS    = hello echo cat cat2 head bug_head ls tree
 SRC_DIR    = ./src
 BIN_DIR    = ./bin
 
@@ -12,7 +12,7 @@ $(TARGETS):
 	$(BUILD) $(SRC_DIR)/$@.c -o $(BIN_DIR)/$@ -Wall
 
 clean:
-	-rm -f $(BIN_DIR)/*
+	-rm -rf $(BIN_DIR)/*
 
 test: all
 	../test-script.sh

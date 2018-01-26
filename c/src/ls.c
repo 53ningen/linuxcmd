@@ -9,8 +9,8 @@ int main(int argc, char *argv[]) {
     int i;
 
     if (argc < 2) {
-        fprintf(stderr, "%s: no rguments\n", argv[0]);
-        exit(1);
+        do_ls("./");
+        exit(0);
     }
     for(i = 1; i < argc; i++) {
         do_ls(argv[i]);
