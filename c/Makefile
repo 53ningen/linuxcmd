@@ -19,7 +19,8 @@ TARGETS    =  hello \
               touch \
               spawn \
               kill \
-              trap
+              trap \
+              pwd
 
 SRC_DIR    = ./src
 BIN_DIR    = ./bin
