@@ -1,7 +1,25 @@
   CC=gcc
 BUILD=$(CC)
 
-TARGETS    = hello echo cat cat2 head bug_head ls tree mkdir ln symlink rm mv stat chmod
+TARGETS    =  hello \
+              echo \
+              cat \
+              cat2 \
+              head \
+              bug_head \
+              ls \
+              tree \
+              mkdir \
+              ln \
+              symlink \
+              rm \
+              mv \
+              stat \
+              chmod \
+              touch \
+              spawn \
+              kill
+
 SRC_DIR    = ./src
 BIN_DIR    = ./bin
 

@@ -2,6 +2,7 @@
 #include <stdlib.h>
 #include <sys/types.h>
 #include <sys/stat.h>
+#include <time.h>
 
 static char *filetype(mode_t mode);
 
@@ -18,6 +19,19 @@ int main(int argc, char *argv[])
         exit(1);
     }
     printf("type:\t%o (%s)\n", (st.st_mode & S_IFMT) ,filetype(st.st_mode));
+    printf("mode:\t%o\n", (st.st_mode & ~S_IFMT));
+    printf("dev:\t%llu\n", (unsigned long long) st.st_dev);
+    printf("ino:\t%llu\n", (unsigned long long) st.st_ino);
+    printf("rdev:\t%llu\n", (unsigned long long) st.st_rdev);
+    printf("nlink:\t%ld\n", (unsigned long) st.st_nlink);
+    printf("uid:\t%d\n", st.st_uid);
+    printf("gid:\t%d\n", st.st_gid);
+    printf("size:\t%lld\n", st.st_size);
+    printf("blksize:\t%ld\n", (unsigned long) st.st_blksize);
+    printf("blocks:\t%ld\n", (unsigned long) st.st_blocks);
+    printf("atime:\t%s", ctime(&st.st_atime));
+    printf("mtime:\t%s", ctime(&st.st_mtime));
+    printf("ctime:\t%s", ctime(&st.st_ctime));
     exit(0);
 }
 
