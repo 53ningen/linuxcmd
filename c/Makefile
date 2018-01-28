@@ -20,7 +20,9 @@ TARGETS    =  hello \
               spawn \
               kill \
               trap \
-              pwd
+              pwd \
+              env \
+              daytime
 
 SRC_DIR    = ./src
 BIN_DIR    = ./bin
