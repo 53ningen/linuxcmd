@@ -18,7 +18,8 @@ TARGETS    =  hello \
               chmod \
               touch \
               spawn \
-              kill
+              kill \
+              trap
 
 SRC_DIR    = ./src
 BIN_DIR    = ./bin

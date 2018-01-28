@@ -13,7 +13,7 @@ int main(int argc, char *argv[])
     }
 
     pid = atoi(argv[1]);
-    if (kill(pid, 9) < 0) {
+    if (kill(pid, SIGKILL) < 0) {
         perror(argv[1]);
         exit(1);
     }
