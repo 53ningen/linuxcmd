@@ -22,7 +22,8 @@ TARGETS    =  hello \
               trap \
               pwd \
               env \
-              daytime
+              daytime \
+							grep
 
 SRC_DIR    = ./src
 BIN_DIR    = ./bin
