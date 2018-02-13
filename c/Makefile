@@ -23,7 +23,9 @@ TARGETS    =  hello \
               pwd \
               env \
               daytime \
-							grep
+							grep \
+							strings \
+							progress
 
 SRC_DIR    = ./src
 BIN_DIR    = ./bin

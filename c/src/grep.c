@@ -34,7 +34,7 @@ int main(int argc, char *argv[]) {
         do_grep(&pat, stdin);
     } else {
         for (i = 2; i < argc; i++) {
-            FILE *fm;
+            FILE *f;
 
             f = fopen(argv[i], "r");
             if (!f) {
