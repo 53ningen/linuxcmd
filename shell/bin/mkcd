@@ -1,0 +1,3 @@
+#! /bin/sh
+
+mkdir $@ && cd `echo $@ | sed -e "s/-[^ \f\n\r\t]*//g"`
