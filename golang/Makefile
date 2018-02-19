@@ -2,7 +2,7 @@ GO=go
 BUILD=$(GO) build
 FMT=$(GO) fmt
 
-TARGETS    = hello echo cat rm mv kill ln symlink mkdir
+TARGETS    = hello echo cat rm mv kill ln symlink mkdir rmdir
 SRC_DIR    = ./src
 BIN_DIR    = ./bin
 
