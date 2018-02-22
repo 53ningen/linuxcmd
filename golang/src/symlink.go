@@ -8,7 +8,7 @@ import (
 func main() {
 	if len(os.Args) != 3 {
 		fmt.Printf("Usage: %s <src> <dest>\n", os.Args[0])
-		return
+		os.Exit(1)
 	}
 	doSymlink(os.Args[1], os.Args[2])
 }

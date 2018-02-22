@@ -9,7 +9,7 @@ import (
 func main() {
 	if len(os.Args) < 2 {
 		fmt.Printf("Usage: %s <pid>\n", os.Args[0])
-		return
+		os.Exit(1)
 	}
 	for i, v := range os.Args {
 		if i == 0 {
