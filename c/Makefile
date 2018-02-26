@@ -5,7 +5,6 @@ TARGETS    =  hello \
               echo \
               cat \
               cat2 \
-              cd \
               head \
               bug_head \
               ls \
