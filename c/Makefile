@@ -5,6 +5,7 @@ TARGETS    =  hello \
               echo \
               cat \
               cat2 \
+              cd \
               head \
               bug_head \
               ls \
@@ -23,9 +24,8 @@ TARGETS    =  hello \
               pwd \
               env \
               daytime \
-							grep \
-							strings \
-							progress
+              grep \
+              strings
 
 SRC_DIR    = ./src
 BIN_DIR    = ./bin
